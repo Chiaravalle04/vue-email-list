@@ -31,11 +31,11 @@
 
                 <button @click="generateEmail()">Genera Emails</button>
 
-                <div class="container-list">
+                <div class="container-list" v-if="arrayEmails.length === 10">
 
                     <ul>
 
-                        <li v-for="item in arrayEmails" v-if="arrayEmails.length === 10">
+                        <li v-for="item in arrayEmails">
     
                             {{item}}
     
