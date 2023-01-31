@@ -24,23 +24,19 @@ createApp({
 
             for (let i = 1; i <= 10; i++) {
 
-                if (this.arrayEmails <= 10) {
+                axios
+                .get('https://flynn.boolean.careers/exercises/api/random/mail')
+                .then((response) => {
 
-                    axios
-                    .get('https://flynn.boolean.careers/exercises/api/random/mail')
-                    .then((response) => {
-    
-                        console.log(response);
-    
-                        console.log(i, response.data.response);
-    
-                        this.arrayEmails.push(response.data.response);
+                    console.log(response);
 
-                        console.log(this.arrayEmails)
-    
-                    });
+                    console.log(response.data.response);
 
-                };
+                    this.arrayEmails.push(response.data.response);
+
+                    console.log(this.arrayEmails)
+
+                });
 
             };
 
