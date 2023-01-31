@@ -1,0 +1,46 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+}
+
+button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: coral;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.container-list {
+    width: 300px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: lightgray;
+    margin: 10px 0;
+    font-weight: bold;
+}

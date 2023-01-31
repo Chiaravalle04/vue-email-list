@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fonts-->
+
+        <!--Fontawesome-->
+
+        <!-- Vue CDN -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <!-- Axios CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <!--Style CSS-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Vue email list</title>
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <main> <!--Inizio Main-->
+
+                <h1>Vue Email List</h1>
+
+                <button @click="generateEmail()">Genera Emails</button>
+
+                <div class="container-list">
+
+                    <ul>
+
+                        <li v-for="item in arrayEmails">
+    
+                            {{item}}
+    
+                        </li>
+    
+                    </ul>
+
+                </div>
+
+            </main> <!--Fine Main-->
+
+        </div>
+
+        <script text="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+    
+</html>
