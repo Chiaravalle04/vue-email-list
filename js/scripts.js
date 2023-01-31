@@ -48,10 +48,4 @@ createApp({
 
     },
 
-    mounted() {
-
-        // this.generateEmail();
-
-    }
-
 }).mount('#app')
